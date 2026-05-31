@@ -16,3 +16,19 @@ def loading():
         time.sleep(0.4)
 
     print("\nEngine Started Successfully!\n")
+
+def show_speed(speed):
+
+    print(f"Current Speed: {speed} km/h")
+
+    if speed == 0:
+        print("Status: 🛑 Stopped\n")
+
+    elif speed <= 15:
+        print("Status: 🚘 Cruising\n")
+
+    elif speed <= 25:
+        print("Status: 🏎️ Fast Mode\n")
+
+    else:
+        print("Status: 🔥 MAXIMUM SPEED\n")
